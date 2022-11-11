@@ -21,7 +21,7 @@
   &__titleBg {
     width: 306px;
     height: 216px;
-    background-size: 306px 216px;
+    background-size: cover;
     background-image: url("/src/assets/title_bg.png");
     margin: -134px auto;
     position: relative;
@@ -41,7 +41,7 @@
       width: 24px;
       height: 24px;
       content: "";
-      background-size: 24px 24px;
+      background-size: cover;
       background-image: url("/src/assets/arrow.png");
       margin: 4px 0 0 6px;
     }
@@ -65,7 +65,7 @@
     .star-top {
       width: 225px;
       height: 136px;
-      background-size: 225px 136px;
+      background-size: cover;
       background-image: url("/src/assets/star.png");
       position: absolute;
       top: 50px;
@@ -75,7 +75,7 @@
     .rect {
       width: 220px;
       height: 265px;
-      background-size: 220px 265px;
+      background-size: cover;
       background-image: url("/src/assets/rect.png");
       position: absolute;
       top: 350px;
@@ -84,7 +84,7 @@
     .bug {
       width: 422px;
       height: 335px;
-      background-size: 422px 335px;
+      background-size: cover;
       background-image: url("/src/assets/bug.png");
       position: absolute;
       top: 320px;
@@ -98,7 +98,7 @@
     .book-box {
       width: 422px;
       height: 335px;
-      background-size: 422px 335px;
+      background-size: cover;
       background-image: url("/src/assets/book.png");
       position: absolute;
       top: 320px;
@@ -110,7 +110,7 @@
     .star-left {
       width: 225px;
       height: 136px;
-      background-size: 225px 136px;
+      background-size: cover;
       background-image: url("/src/assets/star.png");
       transform: rotate(-25deg);
       position: absolute;

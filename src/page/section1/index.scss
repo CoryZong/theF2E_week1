@@ -1,9 +1,98 @@
+@import "/src/cssfile";
+
 .section1 {
+  height: 970px;
+  position: relative;
   &__bar {
     height: 80px;
     background-color: #efe5a4;
   }
   &__body {
-    height: calc(100vh - 160px);
+    height: 810px;
+    .dots {
+      width: 393px;
+      height: 33px;
+      display: flex;
+      justify-content: space-between;
+      margin: 76px auto 0;
+      .dot {
+        width: 33px;
+        height: 33px;
+        background-color: $color-d2c67a;
+        border-radius: 50%;
+      }
+    }
+    .card {
+      width: 475px;
+      height: 152px;
+      color: white;
+      font-size: 52px;
+      font-weight: 900;
+      border-radius: 20px;
+      line-height: 1;
+      padding: 24px;
+      &-orange {
+        background-color: $color-cfa575;
+        box-shadow: 30px 23px $color-dfc5a7;
+        position: absolute;
+        top: 623px;
+        left: 121px;
+      }
+      &-yellow {
+        background-color: $color-d2c67a;
+        box-shadow: 30px 23px $color-efe5a4;
+        position: absolute;
+        top: 429px;
+        left: 736px;
+      }
+      &-green {
+        background-color: $color-4e7b57;
+        box-shadow: 30px 23px $color-a9c1ae;
+        position: absolute;
+        top: 235px;
+        left: 1311px;
+      }
+    }
+    .yellowBall-box {
+      width: 230px;
+      height: 250px;
+      position: absolute;
+      left: 1642px;
+      top: 692px;
+      .q {
+        width: 160px;
+        display: flex;
+        justify-content: space-around;
+        color: $color-4e7b57;
+        font-size: 80px;
+        font-weight: 900;
+        margin-left: 50px;
+        position: relative;
+        &-1 {
+          transform: rotate(-4.49deg);
+          position: absolute;
+          bottom: -15px;
+          left: 0;
+        }
+        &-2 {
+          transform: rotate(8.58deg);
+          position: absolute;
+          bottom: -15px;
+          left: 50px;
+        }
+        &-3 {
+          transform: rotate(32.45deg);
+          position: absolute;
+          bottom: -25px;
+          left: 100px;
+        }
+      }
+      .yellowBall {
+        width: 230px;
+        height: 150px;
+        background-size: cover;
+        background-image: url("/src/assets/ball_yellow.png");
+      }
+    }
   }
 }

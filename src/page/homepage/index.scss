@@ -1,7 +1,6 @@
 @import "/src/cssfile";
 
 .homepage {
-  width: 100vw;
   height: calc(100vh - 80px);
   background-color: #f1ede9;
   position: relative;
@@ -38,13 +37,16 @@
     border-radius: 2px;
     margin: 310px auto 0;
     @include flex-center;
-    &:hover {
-      box-shadow: 8px 10px black;
-    }
-    img {
+    &:after {
       width: 24px;
       height: 24px;
-      margin-left: 10px;
+      content: "";
+      background-size: 24px 24px;
+      background-image: url("/src/assets/arrow.png");
+      margin: 4px 0 0 6px;
+    }
+    &:hover {
+      box-shadow: 8px 10px black;
     }
   }
   &__rightPage {
@@ -63,6 +65,8 @@
     .star-top {
       width: 225px;
       height: 136px;
+      background-size: 225px 136px;
+      background-image: url("/src/assets/star.png");
       position: absolute;
       top: 50px;
       right: 250px;
@@ -71,6 +75,8 @@
     .rect {
       width: 220px;
       height: 265px;
+      background-size: 220px 265px;
+      background-image: url("/src/assets/rect.png");
       position: absolute;
       top: 350px;
       right: 0;
@@ -80,7 +86,6 @@
       height: 335px;
       background-size: 422px 335px;
       background-image: url("/src/assets/bug.png");
-      background-repeat: no-repeat;
       position: absolute;
       top: 320px;
       right: 320px;
@@ -95,7 +100,6 @@
       height: 335px;
       background-size: 422px 335px;
       background-image: url("/src/assets/book.png");
-      background-repeat: no-repeat;
       position: absolute;
       top: 320px;
       left: 400px;
@@ -106,6 +110,8 @@
     .star-left {
       width: 225px;
       height: 136px;
+      background-size: 225px 136px;
+      background-image: url("/src/assets/star.png");
       transform: rotate(-25deg);
       position: absolute;
       top: 350px;
@@ -126,6 +132,7 @@
     display: flex;
     position: absolute;
     bottom: 12px;
+    overflow: hidden;
     .thef2e {
       color: white;
       font-size: 80px;

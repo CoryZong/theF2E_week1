@@ -1,0 +1,136 @@
+@import "/src/cssfile";
+
+.homepage {
+  width: 100vw;
+  height: calc(100vh - 80px);
+  background-color: #f1ede9;
+  position: relative;
+  &__title {
+    width: 433px;
+    height: 341px;
+    background-size: 433px 276px;
+    background-image: url("/src/assets/title.png");
+    background-repeat: no-repeat;
+    background-position-y: bottom;
+    margin: 0 auto;
+    position: relative;
+    z-index: 5;
+    &:hover {
+      background-image: url("/src/assets/title_hover.png");
+    }
+  }
+  &__titleBg {
+    width: 306px;
+    height: 216px;
+    background-size: 306px 216px;
+    background-image: url("/src/assets/title_bg.png");
+    margin: -134px auto;
+    position: relative;
+    z-index: 1;
+  }
+  &__applyBtn {
+    width: 183px;
+    height: 44px;
+    font-size: 20px;
+    font-weight: 900;
+    background-color: white;
+    border: 1px solid black;
+    border-radius: 2px;
+    margin: 310px auto 0;
+    @include flex-center;
+    &:hover {
+      box-shadow: 8px 10px black;
+    }
+    img {
+      width: 24px;
+      height: 24px;
+      margin-left: 10px;
+    }
+  }
+  &__rightPage {
+    .webDesign {
+      width: 368px;
+      height: 62px;
+      font-size: 52px;
+      font-weight: 800;
+      font-family: "Georama";
+      font-style: italic;
+      position: absolute;
+      top: 70px;
+      right: 20px;
+      z-index: 5;
+    }
+    .star-top {
+      width: 225px;
+      height: 136px;
+      position: absolute;
+      top: 50px;
+      right: 250px;
+      z-index: 1;
+    }
+    .rect {
+      width: 220px;
+      height: 265px;
+      position: absolute;
+      top: 350px;
+      right: 0;
+    }
+    .bug {
+      width: 422px;
+      height: 335px;
+      background-size: 422px 335px;
+      background-image: url("/src/assets/bug.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 320px;
+      right: 320px;
+      &:hover {
+        background-image: url("/src/assets/bug_hover.png");
+      }
+    }
+  }
+  &__leftPage {
+    .book-box {
+      width: 422px;
+      height: 335px;
+      background-size: 422px 335px;
+      background-image: url("/src/assets/book.png");
+      background-repeat: no-repeat;
+      position: absolute;
+      top: 320px;
+      left: 400px;
+      &:hover {
+        background-image: url("/src/assets/book_hover.png");
+      }
+    }
+    .star-left {
+      width: 225px;
+      height: 136px;
+      transform: rotate(-25deg);
+      position: absolute;
+      top: 350px;
+      left: 50px;
+    }
+    .fontEnd {
+      font-size: 52px;
+      font-weight: 800;
+      font-family: "Georama";
+      font-style: italic;
+      position: absolute;
+      top: 600px;
+      left: 100px;
+    }
+  }
+  &__bottom {
+    width: 100%;
+    display: flex;
+    position: absolute;
+    bottom: 12px;
+    .thef2e {
+      color: white;
+      font-size: 80px;
+      font-weight: 900;
+      margin-right: 30px;
+    }
+  }
+}

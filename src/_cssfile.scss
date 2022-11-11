@@ -1,0 +1,8 @@
+$color-4e7b57: #4e7b57;
+$color-A9C1AE: #a9c1ae;
+
+@mixin flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

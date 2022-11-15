@@ -1,5 +1,6 @@
 import "./index.scss";
 import React from "react";
+import { Thef2e } from "./component/Thef2e";
 
 export default () => {
   return (
@@ -21,12 +22,8 @@ export default () => {
         <div className="fontEnd">FRONT END</div>
       </div>
       <div className="homepage__bottom">
-        <div className="thef2e">THEF2E</div>
-        <div className="thef2e">THEF2E</div>
-        <div className="thef2e">THEF2E</div>
-        <div className="thef2e">THEF2E</div>
-        <div className="thef2e">THEF2E</div>
-        <div className="thef2e">THEF2E</div>
+        <Thef2e />
+        <Thef2e />
       </div>
     </div>
   );

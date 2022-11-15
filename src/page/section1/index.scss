@@ -35,29 +35,34 @@
         background-color: $color-cfa575;
         box-shadow: 30px 23px $color-dfc5a7;
         position: absolute;
-        top: 623px;
-        left: 121px;
+        left: 50%;
+        bottom: -228px;
+        transform: translateX(-50%);
+        margin-left: -480px;
       }
       &-yellow {
         background-color: $color-d2c67a;
         box-shadow: 30px 23px $color-efe5a4;
         position: absolute;
-        top: 429px;
-        left: 736px;
+        left: 50%;
+        bottom: -228px;
+        transform: translateX(-50%);
       }
       &-green {
         background-color: $color-4e7b57;
         box-shadow: 30px 23px $color-a9c1ae;
         position: absolute;
-        top: 235px;
-        left: 1311px;
+        left: 50%;
+        bottom: -228px;
+        transform: translateX(-50%);
+        margin-left: 480px;
       }
     }
     .yellowBall-box {
       width: 230px;
       height: 250px;
       position: absolute;
-      left: 1642px;
+      right: 80px;
       top: 692px;
       .q {
         width: 160px;

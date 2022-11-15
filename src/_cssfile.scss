@@ -10,8 +10,31 @@ $color-d2c67a: #d2c67a;
 $color-efe5a4: #efe5a4;
 $color-faf4d2: #faf4d2;
 
+@font-face {
+  font-family: GenSenRounded-H;
+  src: url("/src/fonts/GenSenRounded-H.ttc");
+}
+
 @mixin flex-center {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@keyframes slide1 {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes slide2 {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-200%);
+  }
 }

@@ -1,7 +1,7 @@
 @import "/src/cssfile";
 
 .homepage {
-  height: calc(100vh - 80px);
+  height: 860px;
   background-color: #f1ede9;
   position: relative;
   &__title {
@@ -36,6 +36,7 @@
     border: 1px solid black;
     border-radius: 2px;
     margin: 310px auto 0;
+    transition: all 0.3s;
     @include flex-center;
     &:after {
       width: 24px;
@@ -88,7 +89,10 @@
       background-image: url("/src/assets/bug.png");
       position: absolute;
       top: 320px;
-      right: 320px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: 365px;
+      transition: all 0.3s;
       &:hover {
         background-image: url("/src/assets/bug_hover.png");
       }
@@ -102,7 +106,10 @@
       background-image: url("/src/assets/book.png");
       position: absolute;
       top: 320px;
-      left: 400px;
+      left: 50%;
+      transform: translateX(-50%);
+      margin-left: -380px;
+      transition: all 0.3s;
       &:hover {
         background-image: url("/src/assets/book_hover.png");
       }
@@ -129,10 +136,19 @@
   }
   &__bottom {
     width: 100%;
-    display: flex;
     position: absolute;
     bottom: 12px;
     overflow: hidden;
+    display: flex;
+    ul {
+      display: flex;
+      list-style-type: none;
+      animation: slide1 30s linear infinite;
+      &:nth-of-type(2) {
+        animation: slide2 30s linear infinite;
+        animation-delay: -15s;
+      }
+    }
     .thef2e {
       color: white;
       font-size: 80px;

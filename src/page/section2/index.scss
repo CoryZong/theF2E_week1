@@ -1,0 +1,116 @@
+@import "/src/cssfile";
+
+.section2 {
+  height: 2083px;
+  background-color: #a9c1ae;
+  position: relative;
+  overflow: hidden;
+  .thef2e-box {
+    overflow: hidden;
+    .thef2e-colorful {
+      width: 2016px;
+      height: 288px;
+      background-image: url("/src/assets/thef2e_colorful.png");
+      background-size: cover;
+    }
+  }
+  .cloud {
+    width: 297px;
+    height: 186px;
+    background-image: url("/src/assets/cloud.png");
+    background-size: cover;
+    position: absolute;
+    top: 550px;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: -550px;
+  }
+  .circle-big {
+    width: 1800px;
+    height: 1800px;
+    background-color: $color-f1ede9;
+    border-radius: 50%;
+    position: relative;
+    margin: -178px auto 0;
+    .title {
+      width: 911px;
+      height: 161px;
+      color: #4b4b4b;
+      font-size: 80px;
+      font-weight: 900;
+      text-align: center;
+      line-height: 180px;
+      background-image: url("/src/assets/title_bg2.png");
+      background-size: cover;
+      position: absolute;
+      top: 150px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    .text {
+      width: 840px;
+      height: 206px;
+      background-image: url("/src/assets/text.png");
+      background-size: cover;
+      position: absolute;
+      top: 400px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  .circle-brown {
+    width: 1491px;
+    height: 1491px;
+    background-color: $color-cfa575;
+    border-radius: 50%;
+    position: absolute;
+    top: 850px;
+    left: 50%;
+    transform: translateX(-50%);
+    .star {
+      width: 225px;
+      height: 136px;
+      background-image: url("/src/assets/star.png");
+      background-size: cover;
+      position: absolute;
+      top: 160px;
+      left: 50%;
+      z-index: -1;
+      transform: translateX(-50%) rotate(-45deg);
+      margin-left: -220px;
+    }
+    .title2 {
+      width: 550px;
+      margin: 228px auto 0;
+      .content {
+        color: white;
+        font-size: 80px;
+        font-weight: 900;
+        text-align: center;
+        &:last-child {
+          background-color: #4b4b4b;
+          padding: 10px 0;
+          margin: 0 auto;
+        }
+      }
+    }
+    .title3 {
+      width: 680px;
+      position: relative;
+      top: 0;
+      left: 50%;
+      margin: 46px 0 0 65px;
+      transform: translateX(-50%);
+      z-index: 5;
+      .content {
+        color: white;
+        font-size: 40px;
+        font-weight: 900;
+      }
+    }
+    .cloud {
+      top: 450px;
+      margin-left: 395px;
+    }
+  }
+}

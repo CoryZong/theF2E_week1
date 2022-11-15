@@ -6,12 +6,16 @@
   position: relative;
   overflow: hidden;
   .thef2e-box {
-    overflow: hidden;
-    .thef2e-colorful {
+    display: flex;
+    img {
       width: 2016px;
       height: 288px;
-      background-image: url("/src/assets/thef2e_colorful.png");
-      background-size: cover;
+      animation: slide1 40s linear infinite;
+      padding: 0 15px;
+      &:nth-of-type(2) {
+        animation: slide2 40s linear infinite;
+        animation-delay: -20s;
+      }
     }
   }
   .cloud {
@@ -25,7 +29,7 @@
     transform: translateX(-50%);
     margin-left: -550px;
   }
-  .circle-big {
+  .circle-rice {
     width: 1800px;
     height: 1800px;
     background-color: $color-f1ede9;

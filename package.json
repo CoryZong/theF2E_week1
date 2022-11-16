@@ -1,5 +1,6 @@
 {
   "name": "thef2e",
+  "homepage": "https://coryzong.github.io/theF2E_week1",
   "version": "0.0.0",
   "scripts": {
     "dev": "vite",
@@ -7,6 +8,7 @@
     "serve": "vite preview"
   },
   "dependencies": {
+    "gh-pages": "^4.0.0",
     "gsap": "^3.11.3",
     "path": "^0.12.7",
     "prettier": "^2.7.1",

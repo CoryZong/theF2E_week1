@@ -4,6 +4,7 @@ import path from "path";
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: "/theF2E_week1/",
   plugins: [reactRefresh()],
   resolve: {
     alias: {

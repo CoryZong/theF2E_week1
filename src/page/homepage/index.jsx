@@ -7,9 +7,9 @@ import { HomepageFooter } from "./component/HomepageFooter";
 export default () => {
   return (
     <div className="homepage">
-      <HomepageTitle />
-      <HomepageBody />
-      <HomepageFooter />
+      {/*<HomepageTitle />*/}
+      {/*<HomepageBody />*/}
+      {/*<HomepageFooter />*/}
     </div>
   );
 };

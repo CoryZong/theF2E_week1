@@ -1,28 +1,17 @@
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
+import { helper } from "../../../helper/helper";
 
 export const Section1Body = () => {
   const orangeCard = useRef(null);
   const yellowCard = useRef(null);
   const greenCard = useRef(null);
 
-  function handleGsap(className, y, delay) {
-    gsap.to(className, {
-      y: y,
-      duration: 2,
-      ease: "back.out(1)",
-      delay: delay,
-      scrollTrigger: {
-        trigger: ".section1",
-      },
-    });
-  }
-
   useEffect(() => {
     gsap.registerPlugin(ScrollTrigger);
-    handleGsap(".card-orange", -400, 1);
-    handleGsap(".card-yellow", -600, 0.5);
-    handleGsap(".card-green", -800, 1.5);
+    helper.handleGsap(".section1", ".card-orange", -400, 1);
+    helper.handleGsap(".section1", ".card-yellow", -600, 0.5);
+    helper.handleGsap(".section1", ".card-green", -800, 1.5);
   }, []);
 
   return (

@@ -1,0 +1,17 @@
+@import "/src/cssfile";
+
+.section3 {
+  height: 2745px;
+  background-color: $color-f1ede9;
+  overflow: hidden;
+  position: relative;
+  .circle-green {
+    width: 1800px;
+    height: 1800px;
+    background-image: url("/src/assets/circle_green.png");
+    background-size: cover;
+    position: absolute;
+    top: 473px;
+    left: -800px;
+  }
+}

@@ -70,6 +70,7 @@
     position: absolute;
     top: 850px;
     left: 50%;
+    z-index: 1;
     transform: translateX(-50%);
     .star {
       width: 225px;

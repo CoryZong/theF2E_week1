@@ -1,11 +1,10 @@
-import "./index.scss";
 import React from "react";
 
-export default () => {
+export const HomepageNav = () => {
   return (
-    <div className="nav">
-      <div className="nav__logo">THE F2E</div>
-      <div className="nav__link">
+    <div className="homepage__nav">
+      <div className="logo">THE F2E</div>
+      <div className="link">
         <a href="/">關卡資訊</a>
         <a href="/">作品列表</a>
         <a href="/">攻略資源</a>

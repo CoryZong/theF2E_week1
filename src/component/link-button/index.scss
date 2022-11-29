@@ -1,0 +1,24 @@
+@import "/src/cssfile";
+
+.link-button {
+  width: 183px;
+  height: 44px;
+  font-size: 20px;
+  font-weight: 900;
+  background-color: white;
+  border: 1px solid black;
+  border-radius: 2px;
+  transition: all 0.3s;
+  @include flex-center;
+  &:after {
+    width: 24px;
+    height: 24px;
+    content: "";
+    background-size: cover;
+    background-image: url("/src/assets/arrow.png");
+    margin: 4px 0 0 6px;
+  }
+  &:hover {
+    box-shadow: 8px 10px black;
+  }
+}

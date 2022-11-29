@@ -18,13 +18,6 @@
       }
     }
   }
-  .cloud {
-    width: 297px;
-    height: 186px;
-    background-image: url("/src/assets/cloud.png");
-    background-size: cover;
-    @include locate-element(550px, -550px);
-  }
   .circle-rice {
     width: 1800px;
     height: 1800px;
@@ -99,10 +92,6 @@
         font-size: 40px;
         font-weight: 900;
       }
-    }
-    .cloud {
-      top: 450px;
-      margin-left: 395px;
     }
   }
 }

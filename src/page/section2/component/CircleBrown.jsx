@@ -1,4 +1,5 @@
 import React from "react";
+import { Cloud } from "@//component/cloud";
 
 export const CircleBrown = () => {
   return (
@@ -12,7 +13,7 @@ export const CircleBrown = () => {
         <div className="content">各路廠商強強聯手！</div>
         <div className="content">共同設計出接地氣的網頁互動挑戰關卡</div>
       </div>
-      <div className="cloud" />
+      <Cloud top={450} marginLeft={395} />
     </div>
   );
 };

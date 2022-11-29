@@ -21,6 +21,14 @@ $color-faf4d2: #faf4d2;
   align-items: center;
 }
 
+@mixin locate-element($t: 0, $ml: 0) {
+  position: absolute;
+  top: $t;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-left: $ml;
+}
+
 @keyframes slide1 {
   from {
     transform: translateX(100%);

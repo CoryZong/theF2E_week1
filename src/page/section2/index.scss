@@ -23,11 +23,7 @@
     height: 186px;
     background-image: url("/src/assets/cloud.png");
     background-size: cover;
-    position: absolute;
-    top: 550px;
-    left: 50%;
-    transform: translateX(-50%);
-    margin-left: -550px;
+    @include locate-element(550px, -550px);
   }
   .circle-rice {
     width: 1800px;
@@ -46,20 +42,14 @@
       line-height: 180px;
       background-image: url("/src/assets/title_bg2.png");
       background-size: cover;
-      position: absolute;
-      top: 150px;
-      left: 50%;
-      transform: translateX(-50%);
+      @include locate-element(150px);
     }
     .text {
       width: 840px;
       height: 206px;
       background-image: url("/src/assets/text.png");
       background-size: cover;
-      position: absolute;
-      top: 400px;
-      left: 50%;
-      transform: translateX(-50%);
+      @include locate-element(400px);
     }
   }
   .circle-brown {
@@ -67,11 +57,8 @@
     height: 1491px;
     background-color: $color-cfa575;
     border-radius: 50%;
-    position: absolute;
-    top: 850px;
-    left: 50%;
     z-index: 1;
-    transform: translateX(-50%);
+    @include locate-element(850px);
     .star {
       width: 225px;
       height: 136px;

@@ -1,0 +1,9 @@
+@import "/src/cssfile";
+
+.cloud {
+  width: 297px;
+  height: 186px;
+  background-image: url("/src/assets/cloud.png");
+  background-size: cover;
+  @include locate-element(550px, -550px);
+}

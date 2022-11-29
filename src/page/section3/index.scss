@@ -14,4 +14,54 @@
     top: 473px;
     left: -800px;
   }
+  .title {
+    h1 {
+      font-size: 60px;
+      font-weight: 900;
+    }
+    .en {
+      color: $color-4e7b57;
+      font-family: "Georama";
+      letter-spacing: 0.15em;
+    }
+  }
+  .content {
+    p {
+      font-size: 44px;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+  }
+  .text-box1 {
+    .title {
+      @include locate-element(350px, -240px);
+    }
+    .content {
+      @include locate-element(550px, 220px);
+    }
+  }
+  .text-box2 {
+    .title {
+      @include locate-element(950px, 220px);
+    }
+    .content {
+      @include locate-element(1150px, 440px);
+    }
+  }
+  .text-box3 {
+    .title {
+      @include locate-element(1550px, 220px);
+    }
+    .content {
+      @include locate-element(1750px, 440px);
+    }
+  }
+  .text-box4 {
+    .title {
+      @include locate-element(2150px, -220px);
+    }
+    .content {
+      @include locate-element(2350px, 0px);
+    }
+  }
 }

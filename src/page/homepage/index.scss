@@ -125,12 +125,8 @@
       height: 335px;
       background-size: cover;
       background-image: url("/src/assets/bug.png");
-      position: absolute;
-      top: 320px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-left: 365px;
       transition: all 0.3s;
+      @include locate-element(320px, 365px);
       &:hover {
         background-image: url("/src/assets/bug_hover.png");
       }
@@ -142,12 +138,8 @@
       height: 335px;
       background-size: cover;
       background-image: url("/src/assets/book.png");
-      position: absolute;
-      top: 320px;
-      left: 50%;
-      transform: translateX(-50%);
-      margin-left: -380px;
       transition: all 0.3s;
+      @include locate-element(320px, -380px);
       &:hover {
         background-image: url("/src/assets/book_hover.png");
       }

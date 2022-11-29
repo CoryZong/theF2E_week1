@@ -1,6 +1,6 @@
 import React from "react";
-import { Star } from "@//component/star";
-import { Cloud } from "@//component/cloud";
+import { Star } from "@/component/star";
+import { Cloud } from "@/component/cloud";
 
 export const Background = () => {
   return (

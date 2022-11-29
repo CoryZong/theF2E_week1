@@ -1,6 +1,6 @@
 import React from "react";
-import { Title } from "@//page/section3/conponent/Title";
-import { Content } from "@//page/section3/conponent/Content";
+import { Title } from "@/page/section3/conponent/Title";
+import { Content } from "@/page/section3/conponent/Content";
 
 export const TextBox = () => {
   return (

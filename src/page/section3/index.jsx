@@ -1,7 +1,7 @@
 import "./index.scss";
 import React from "react";
-import { TextBox } from "@//page/section3/conponent/TextBox";
-import { Background } from "@//page/section3/conponent/Background";
+import { TextBox } from "@/page/section3/conponent/TextBox";
+import { Background } from "@/page/section3/conponent/Background";
 
 export default () => {
   return (

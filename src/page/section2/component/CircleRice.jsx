@@ -1,5 +1,5 @@
 import React from "react";
-import { Cloud } from "@//component/cloud";
+import { Cloud } from "@/component/cloud";
 
 export const CircleRice = () => {
   return (

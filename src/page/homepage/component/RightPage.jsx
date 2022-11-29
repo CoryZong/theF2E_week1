@@ -1,5 +1,5 @@
 import React from "react";
-import { Star } from "@//component/star";
+import { Star } from "@/component/star";
 
 export const RightPage = () => {
   return (

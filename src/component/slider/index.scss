@@ -1,0 +1,16 @@
+@import "/src/cssfile";
+
+.slider {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  .first-content {
+    animation: slide1 linear infinite;
+    animation-duration: 30s;
+  }
+  .second-content {
+    animation: slide2 linear infinite;
+    animation-duration: 30s;
+    animation-delay: -15s;
+  }
+}

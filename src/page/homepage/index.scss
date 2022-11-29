@@ -122,26 +122,18 @@
       left: 100px;
     }
   }
-  &__footer {
-    width: 100%;
+  .slider {
     position: absolute;
     bottom: 12px;
-    overflow: hidden;
-    display: flex;
     ul {
       display: flex;
       list-style-type: none;
-      animation: slide1 30s linear infinite;
-      &:nth-of-type(2) {
-        animation: slide2 30s linear infinite;
-        animation-delay: -15s;
+      li {
+        color: white;
+        font-size: 80px;
+        font-weight: 900;
+        margin-right: 30px;
       }
-    }
-    .thef2e {
-      color: white;
-      font-size: 80px;
-      font-weight: 900;
-      margin-right: 30px;
     }
   }
 }

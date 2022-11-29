@@ -1,11 +1,9 @@
-import { Thef2eText } from "./Thef2eText";
 import React from "react";
+import { Thef2eText } from "./Thef2eText";
+import { Slider } from "@/component/slider";
 
 export const HomepageFooter = () => {
   return (
-    <div className="homepage__footer">
-      <Thef2eText />
-      <Thef2eText />
-    </div>
+    <Slider firstContent={<Thef2eText />} secondContent={<Thef2eText />} />
   );
 };

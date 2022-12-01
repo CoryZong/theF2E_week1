@@ -34,6 +34,7 @@
     }
   }
   .text-box1 {
+    opacity: 0;
     .title {
       @include locate-element(350px, -240px);
     }
@@ -42,6 +43,7 @@
     }
   }
   .text-box2 {
+    opacity: 0;
     .title {
       @include locate-element(950px, 220px);
     }
@@ -50,6 +52,7 @@
     }
   }
   .text-box3 {
+    opacity: 0;
     .title {
       @include locate-element(1550px, 220px);
     }
@@ -58,6 +61,7 @@
     }
   }
   .text-box4 {
+    opacity: 0;
     .title {
       @include locate-element(2150px, -220px);
     }

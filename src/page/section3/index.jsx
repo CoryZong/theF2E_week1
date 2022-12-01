@@ -12,14 +12,18 @@ export default () => {
     const tl = gsap.timeline({
       scrollTrigger: {
         trigger: ".circle-green",
-        start: "top top",
-        end: "+=1750",
+        start: "top 40%",
+        end: "+=1900",
         scrub: 1,
       },
     });
-    tl.fromTo(".circle-green", { rotation: -120 }, { rotation: -70 })
+    tl.to(".text-box1", { opacity: 1 })
+      .fromTo(".circle-green", { rotation: -120 }, { rotation: -70 })
+      .to(".text-box2", { opacity: 1 })
       .to(".circle-green", { rotation: -30 })
-      .to(".circle-green", { rotation: 0 });
+      .to(".text-box3", { opacity: 1 })
+      .to(".circle-green", { rotation: 0 })
+      .to(".text-box4", { opacity: 1 });
   });
   return (
     <div ref={section3Ref} className="section3">

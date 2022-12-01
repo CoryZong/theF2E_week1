@@ -1,4 +1,47 @@
+@import "/src/cssfile";
+
 .section5 {
   height: 1883px;
   background-color: $color-f1ede9;
+  .slider {
+    h1 {
+      color: $color-4e7b57;
+      font-size: 120px;
+      font-weight: 900;
+      letter-spacing: 0.15em;
+      white-space: nowrap;
+    }
+  }
+  &__body {
+    .content {
+      &__bg {
+        width: 1042px;
+        height: 438px;
+        background-color: $color-4e7b57;
+        position: absolute;
+      }
+      &__block {
+        width: 1045px;
+        height: 438px;
+        background-color: white;
+        border-radius: 100px;
+        margin-top: 100px;
+        padding: 100px 60px 69px;
+        position: relative;
+        h3 {
+          color: $color-4e7b57;
+          font-size: 52px;
+          font-weight: 900;
+          letter-spacing: 0.15em;
+          text-align: center;
+          @include locate-element(-29px);
+        }
+        p,
+        li {
+          font-size: 40px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
 }

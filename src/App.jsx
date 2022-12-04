@@ -7,6 +7,7 @@ import Section2 from "@/page/section2";
 import Section3 from "@/page/section3";
 import Section4 from "@/page/section4";
 import Section5 from "@/page/section5";
+import Section6 from "@/page/section6";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Section3 />
         <Section4 />
         <Section5 />
+        <Section6 />
       </div>
     </HashRouter>
   );

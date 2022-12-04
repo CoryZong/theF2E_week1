@@ -4,6 +4,7 @@
   height: 860px;
   background-color: #f1ede9;
   position: relative;
+  overflow: hidden;
   &__nav {
     height: 80px;
     background-color: #fff;
@@ -70,14 +71,13 @@
   }
   &__rightPage {
     .webDesign {
-      width: 368px;
-      height: 62px;
       font-size: 52px;
       font-weight: 800;
       font-family: "Georama";
       font-style: italic;
+      white-space: nowrap;
       z-index: 5;
-      @include locate-element(140px, 760px);
+      @include locate-element(135px, 720px);
     }
     .rect {
       width: 220px;

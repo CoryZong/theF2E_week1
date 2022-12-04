@@ -1,0 +1,9 @@
+@import "/src/cssfile";
+
+.dot {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  @include locate-element;
+}

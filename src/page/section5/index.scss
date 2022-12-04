@@ -13,7 +13,9 @@
     }
   }
   &__body {
+    padding-top: 80px;
     .content {
+      margin-bottom: 160px;
       &__bg {
         width: 1042px;
         height: 438px;
@@ -28,6 +30,8 @@
         margin-top: 100px;
         padding: 100px 60px 69px;
         position: relative;
+        left: 50%;
+        transform: translateX(-50%);
         h3 {
           color: $color-4e7b57;
           font-size: 52px;
@@ -42,6 +46,21 @@
           font-weight: 500;
         }
       }
+    }
+  }
+  &__footer {
+    @include flex-center;
+    position: relative;
+    padding-top: 80px;
+    button {
+      width: 605px;
+      height: 138px;
+      color: white;
+      font-size: 64px;
+      font-weight: 900;
+      background-color: $color-4e7b57;
+      border-radius: 20px;
+      margin: 0 100px;
     }
   }
 }
